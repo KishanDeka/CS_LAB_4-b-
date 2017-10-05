@@ -13,8 +13,10 @@ int main()
 
     cout << "enter the last term of summation : ";
     cin>> x;
-    y=sum(x);
-    cout <<"the sum of all natural numbers upto "<<x<<" is = "<<y;
+    if (x>=1)
+       { y=sum(x);
+         cout <<"the sum of all natural numbers upto "<<x<<" is = "<<y;}
+    else {cout<<x<<" is not a natural number.";}
 
     return 0;
 }
