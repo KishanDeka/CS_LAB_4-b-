@@ -1,19 +1,17 @@
 #include <iostream>
 using namespace std;
 
-void print(int l, int u)
-{   if(l < u)
-    cout<< l<<", ";
-    print(l + 1, u);
+void print(int u)
+{   if(u>=1)
+       {cout<< u<<", ";
+         print(u-1);}
 }
 int main()
 {
-    int x, y;
-
+    int  y;
     cout << "enter the number : ";
-    cin>> x;
-    y=1;
-    print(y, x);
+    cin>> y;
+    print(y);
 
     return 0;
 }
